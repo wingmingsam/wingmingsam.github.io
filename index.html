@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pony</title>
+</head>
+<body>
+    
+<script type="text/javascript"
+src="https://www.patternsinthevoid.net/Browser-Ponies/basecfg.js"
+id="browser-ponies-config">
+</script>
+<!--        integrity="sha384-b9Hd0OREQjKgTONUlJ+5jaTGXdgZxt/JBrDcirRQUglJCmfFO3s6geQ0phDJj12Z" -->
+<!--        crossorigin="anonymous" -->
+<script type="text/javascript"
+src="https://www.patternsinthevoid.net/Browser-Ponies/browserponies.js"
+id="browser-ponies-script">
+</script>
+<!--        integrity="sha384-G0HxYtQdJAjJvVUbpajfCCssPAcPcSswhOYCpGYOYgdnvRvw151BHcdjd9wkMPXq" -->
+<!--        crossorigin="anonymous" -->
+<script type="text/javascript">
+/* <![CDATA[ */
+  (function (cfg) {
+    BrowserPonies.setBaseUrl(cfg.baseurl);
+    BrowserPonies.loadConfig(BrowserPoniesBaseConfig);
+    BrowserPonies.loadConfig(cfg);
+  })
+  ({"baseurl":"https://www.patternsinthevoid.net/Browser-Ponies/",
+    "fadeDuration":500,
+    "volume": 1,
+    "fps": 24,
+    "speed": 4,
+    "audioEnabled": false,
+    "showFps": false,
+    "showLoadProgress": true,
+    "speakProbability": 0.2,
+    "dontSpeak": false,
+    "spawn": {
+      "fluttershy": 1,
+      "pinkie pie": 1,
+      "rainbow dash": 1,
+      "rarity": 1,
+      "twilight sparkle": 1,
+      "zapp": 1,
+      "princess luna (season 1)": 0,
+      "queen chrysalis": 0,
+      "raven": 1,
+      "changeling": 1,
+      "cloudchaser": 0,
+      "blossomforth": 0,
+      "vinyl scratch": 1,
+      "zecora": 1,
+      "pp fili-second": 1,
+      "trixie": 1,
+    },
+    "autostart": true
+   }
+  );
+  /* ]]> */
+
+function togglePonies() {
+var main = document.getElementById('main');
+var browserPonies = document.getElementById('browser-ponies');
+if (browserPonies) {
+  if (browserPonies.style.visibility === '') {
+    browserPonies.style.visibility = 'hidden';
+    main.style.zIndex = '100000000';
+  } else {
+    browserPonies.style.visibility = '';
+    main.style.zIndex = '';
+  }
+}
+};
+
+//document.addEventListener("DOMContentLoaded", function() { togglePonies(); });
+</script>
+
+<style type="text/css">
+
+body {
+  font-size: 9pt;
+  color: #c0c0c0;
+  background-color: #080808;
+}
+
+a, a.visited {
+  font-size: 12pt;
+  color: #606060;
+  text-decoration:none;
+}
+pre {
+  text-align: left;
+  font-size: 7.5pt;
+}
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.sparkle {
+  font-size:90px;
+  font-family:impact;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+              url(https://patternsinthevoid.net/Browser-Ponies/glitter.gif) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+</style>
+</body>
+</html>
